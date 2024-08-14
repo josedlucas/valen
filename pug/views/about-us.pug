@@ -1,0 +1,95 @@
+extends ../layouts/_app
+block variables
+    -
+        var  title = "Valen";
+        var  colorBackground = "bg-white";
+        var  menu = {
+            home: "active",
+            products: " ",
+            specialOrders: " ",
+            contact: " "
+        };
+block content
+    section#section1
+        .owl-carousel.owl-theme.about-us
+            div
+                img(src='assets/images/about-us/section1/img.png').img-width-100.d-md-block.d-none
+                img(src='assets/images/about-us/section1/img_m.png').img-width-100.d-md-none.d-block
+                div.mt-md-n22.pb-md-15.mt-n16.pb-13.col-md-8.mx-auto
+                    p.text-warning.fw-lighter.raya-b.d-grid
+                        | NOSOTROS
+                    p.text-white.fw-lighter.mt-md-3
+                        | Hace 7 años, un emprendedor visionario identificó una necesidad #[br.d-md-block.d-none]
+                        | creciente en la zona de Neuquén Capital:
+                    h1.fs-9.text-warning.fw-lighter
+                        | LA FATAL DE UNA CASA DE #[br.d-md-block.d-none]
+                        | SEGURIDAD INDUSTRIAL #[br.d-md-block.d-none]
+                        | CONFIABLE.
+                    p.text-white.mt-md-4.fw-light
+                        | Con determinación y visión, fundó Valen Indumentaria Industrial #[br.d-md-block.d-none]
+                        | con el objetivo de proporcionar soluciones integrales en seguridad #[br.d-md-block.d-none]
+                        | laboral para las empresas locales.
+                    div.mt-md-5.mt-4
+                        a(href="./products.html").btn.btn-warning
+                            | CONTÁCTANOS
+
+    section#section2.py-md-3
+        img(src='assets/images/about-us/section2/background.svg').w-100.mt-md-n15
+        .col-md-9.mx-auto.py-md-5.my-4.mt-md-n26.row
+            .col-md-5
+                img(src='assets/images/about-us/section2/img.png').w-85
+            .col-md-7
+                h6.fw-light.fs-6 NUESTROS PRODUCTOS
+                p.fw-light.lh-4.my-3
+                    |Desde entonces, hemos crecido y diversificado nuestros servicios para
+                    |ofrecerles una amplia selección de Elementos de Protección Personal,
+                    |Calzado de Seguridad y Ropa de Trabajo de marcas reconocidas en el
+                    |mercado. Desde Guantes y Anteojos de protección hasta botas de seguridad
+                    |certificadas y ropa de trabajo duradera, nuestra variedad de productos
+                    |garantiza que encuentres exactamente lo que necesitás para proteger a
+                    |tus trabajadores y cumplir con las normativas de seguridad laboral.
+                h3.fw-light
+                    |EL OBJETIVO DE PROPORCIONAR SOLUCIONES INTEGRALES EN SEGURIDAD LABORAL PARA LAS EMPRESAS LOCALES.
+
+
+    section#section3.py-md-3
+        .container
+            .row
+                .col-md-6.d-flex.justify-content-end
+                    img(src='assets/images/home/section3/img.png').w-75
+                .col-md-6.pt-md-5
+                    h3.text-warning.fs-4.fw-lighter ¿Cómo nace Valen #[br.d-md-block.d-none] Indumentaria?
+                    p.text-white Hace 7 años, un emprendedor visionario identificó una #[br.d-md-block.d-none]necesidad creciente en la zona de Neuquén Capital:
+                    h5.text-warning.fs-1 La falta de una casa de seguridad #[br.d-md-block.d-none]industrial confiable.
+                    p.text-white Con determinación y visión, fundó Valen Indumentaria #[br.d-md-block.d-none]Industrial con el objetivo de proporcionar soluciones #[br.d-md-block.d-none]integrales en seguridad laboral para las empresas locales.
+                    a.btn.btn-warning.rounded-0 CONOCER MÁS
+    section#section4.py-md-3
+        img(src='assets/images/home/section4/background.svg').w-100
+        .col-md-8.mx-auto.py-md-5.my-4.mt-md-n21
+            .owl-carousel.owl-theme.owl-carousel-section4
+                .row
+                    .col-md-6.pt-md-5
+                        h3.text-white.fs-10.fw-lighter TESTIMONIOS 1 / 3
+                        img(src='assets/images/home/section4/comillas.svg').w-10.my-4
+                        p.text-white.text-justify
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum
+                            | nisi sit amet dolor accumsan luctus. In id tempus lorem, lacinia blandit urna.
+                            | Etiam at ipsum molestie, porta elit quis, fermentum erat. Aliquam in massa
+                            | pellentesque, commodo odio non.
+                        p.text-warning Nombre de cliente, nombre empresa
+                    .col-md-6
+                        img(src='assets/images/home/section4/slider/img.png').w-100
+    section#section5.py-md-3.mb-md-6.mt-md-5
+        .col-md-8.mx-auto.my-4.bg-white.rounded-4.pb-md-6.pt-md-3
+            div.d-grid.pt-3.pb-md-3
+                h6.fs-2.text-center(style="width: fit-content;").mx-auto.z-1.bg-white.px-4 Marcas con las que trabajamos
+                img(src="assets/images/home/section5/raya.svg").w-100.z-n1.mt-md-n4.mb-md-5.z-0
+            .owl-carousel.owl-theme.owl-carousel-section5
+                img(src='assets/images/home/section5/slider/img.png')
+                img(src='assets/images/home/section5/slider/img_1.png')
+                img(src='assets/images/home/section5/slider/img_2.png')
+                img(src='assets/images/home/section5/slider/img_3.png')
+                img(src='assets/images/home/section5/slider/img_4.png')
+                img(src='assets/images/home/section5/slider/img_5.png')
+                img(src='assets/images/home/section5/slider/img_6.png')
+

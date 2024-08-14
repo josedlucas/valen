@@ -1,0 +1,135 @@
+extends ../layouts/_app
+block variables
+
+    -
+        var title = "Acción";
+        var colorBackground = "bg-white-theme";
+        var product = {
+            line: 'LÍNEA INDUSTRIAL',
+            name: 'Mameluco',
+            description: 'Nuestro mameluco es una protección cómoda y segura para tus trabajadores, confeccionado en gabardina de 8 oz, es una prenda liviana.',
+            caracteristics: [
+                'Confeccionado en Gabardina de 8 oz',
+                'Puño ajustable con velcro',
+                'Cintura con elástico',
+                '2 bolsillos frontales inferiores',
+                '2 bolsillos  frontales superiores con tapa y velcro',
+                'Cierre con tapa cierre con velcro',
+                'Triple costura en laterales y entrepierna'
+            ]
+        };
+
+        var menu = {
+            home: " ",
+            products: "active",
+            specialOrders: " ",
+            contact: ""
+        };
+block content
+    section#section1ProductDetail
+        .container
+            .row.py-5
+                .col-lg-6
+                    .owl-carousel.owl-theme.products-carousel
+                        img(src='img/products/details/Mameluco.jpeg').img-width-100
+                        img(src='img/products/details/Chomba.jpeg').img-width-100
+                        img(src='img/products/details/Camisa.jpeg').img-width-100
+                    .owl-thumbnails
+                .col-lg-6.ps-lg-5
+                    .pt-lg-2.pt-4
+                        span.font-size-14=product.line
+                        h1=product.name
+                    .pt-lg-4.pt-4
+                        span.font-size-14 DESCRIPCIÓN DEL PRODUCTO
+                        h4.mt-2.pt-2=product.description
+                    .pt-3
+                        ul.ps-0
+                            each caracteristic, index in product.caracteristics
+                                li.list=caracteristic
+                    hr
+                    span.font-size-14 ESPECIFICACIONES
+                    .py-3
+                        input#colorOrange.btn-check(type="radio", name="color", autocomplete="off")
+                        label.p-3.btn.bg-orange.me-2(for="colorOrange")
+                        input#colorBlue.btn-check(type="radio", name="color", autocomplete="off")
+                        label.p-3.btn.bg-blue.me-2(for="colorBlue")
+                        input#colorBrown.btn-check(type="radio", name="color", autocomplete="off")
+                        label.p-3.btn.bg-brown.me-2(for="colorBrown")
+                        input#colorRed.btn-check(type="radio", name="color", autocomplete="off")
+                        label.p-3.btn.bg-red(for="colorRed")
+                    .py-3.d-flex.flex-wrap
+                        input#sizeS.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn.me-2(for="sizeS").btn-outline-dark.btn-sm S
+                        input#sizeM.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn.me-2(for="sizeM").btn-outline-dark.btn-sm M
+                        input#sizeL.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn.me-2(for="sizeL").btn-outline-dark.btn-sm L
+                        input#sizeXL.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn.me-2(for="sizeXL").btn-outline-dark.btn-sm XL
+                        input#sizeXXL.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn.me-2(for="sizeXXL").btn-outline-dark.btn-sm XXL
+                        input#sizeXXXL.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn.me-2(for="sizeXXXL").btn-outline-dark.btn-sm XXXL
+                        input#sizeXXXXL.btn-check(type="radio", name="size", autocomplete="off")
+                        label.btn(for="sizeXXXXL").btn-outline-dark.btn-sm XXXXL
+
+                    .pt-1.pb-4
+                        a(href="" data-bs-toggle="modal", data-bs-target="#modalDeMedidas").text-muted
+                            img(src='assets/images/icons/regla.svg')
+                            | #[span.ms-md-3 Guía de Talles]
+                    .d-flex
+                        .input-number-container
+                            span.input-number-decrement -
+                            input.input-number.border-0(type="number", value="3", min="0", max="100")
+                            span.input-number-increment +
+                        button.btn.btn-warning.px-3.py-2.rounded-0.ms-md-3(type=`button`) AGREGAR AL CARRITO
+    #modalDeMedidas.modal.fade(tabindex="-1", aria-labelledby="modalDeMedidasLabel", aria-hidden="true")
+        .modal-dialog
+            .modal-content.rounded-0
+                .modal-body
+                    .modal-header
+                        .d-flex.align-items-center.mx-auto
+                            .text-center
+                                .fs-6.fw-light MAMELUCO
+                                p.fw-light Medidas referenciales en cm
+                            button.btn-close.position-absolute(type="button", data-bs-dismiss="modal", aria-label="Close", style="right: 3rem;")
+
+                    table.table.table-hover
+                        thead
+                            tr
+                                th.text-center Talle
+                                th XS
+                                th S
+                                th M
+                                th L
+                                th XL
+                                th XXL
+                                th XXXL
+                        tbody
+                            tr
+                                td.text-center Ancho de pecho
+                                td 52
+                                td 54
+                                td 56
+                                td 58
+                                td 62
+                                td 64
+                                td 66
+                            tr
+                                td.text-center Ancho cadera
+                                td 52
+                                td 54
+                                td 56
+                                td 58
+                                td 62
+                                td 64
+                                td 66
+                            tr
+                                td.text-center Largo total
+                                td 52
+                                td 54
+                                td 56
+                                td 58
+                                td 62
+                                td 64
+                                td 66

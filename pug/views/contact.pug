@@ -1,0 +1,50 @@
+extends ../layouts/_app
+block variables
+
+    -
+        var title = "Acción";
+        var colorBackground = "bg-white-theme";
+        var products = [
+            { image: "image1.png",  title: "Pantalón y camisas con reflectivo y bordado"},
+            { image: "image2.png", title: "Mamelucos en sus diferentes modelos con reflectivo" },
+            { image: "image3.png", title: "Chaquetillas medicas"},
+        ];
+        var menu = {
+            home: " ",
+            products: " ",
+            specialOrders: " ",
+            contact: "active"
+        };
+block content
+    section#section1Contact
+        .container.col-md-10.col-10.mx-auto
+            .row.py-5
+                .col-lg-6.ps-lg-5
+                    iframe.maps(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26558.016502557097!2d-59.66526605!3d-33.689483599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22ed0eb1a55f%3A0xe5f2bb57c8ee993a!2sSan%20Pedro%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sve!4v1703288317485!5m2!1ses-419!2sve" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                    p.mt-5.font-size-md-22 Tenemos nuestro taller en San Pedro, #[br.d-md-block.d-none] provincia de Buenos Aires
+                .col-lg-6.ps-lg-5
+                    div.mt-lg-auto.pt-4.pt-lg-1.font-size-md-30 Contacto
+                    form(action="", method="POST" id="form-contact").mt-4
+                        .row
+                            .col-md-6.mb-lg-auto.mb-3
+                                label.ms-lg-auto.ms-2(for='fullname') Nombre y Apellido
+                                input.mt-lg-2.mt-1.form-control(type='text' , id='fullname' , name='fullname', placeholder='Nombre y Apellido')
+                            .col-md-6.mb-lg-auto.mb-3
+                                label.ms-lg-auto.ms-2(for='businnes') Empresa
+                                input.mt-lg-2.mt-1.form-control(type='text' , id='businnes' , name='businnes', placeholder='Empresa')
+                        .row.mt-lg-4
+                            .col-md-6.mb-lg-auto.mb-3
+                                label.ms-lg-auto.ms-2(for='phone') Teléfono
+                                input.mt-lg-2.mt-1.form-control(type='text' , id='phone' , name='phone', placeholder='Teléfono')
+                            .col-md-6.mb-lg-auto.mb-3
+                                label.ms-lg-auto.ms-2(for='email') Mail
+                                input.mt-lg-2.mt-1.form-control(type='email' , id='email' , name='email', placeholder='Mail')
+                        .row.mt-lg-4
+                            .col-md-12.mb-3
+                                label.ms-lg-auto.ms-2(for='message') Mensaje
+                                textarea.mt-lg-2.mt-1.form-control(name='message', id='message' placeholder='Mensaje').form-control
+                        .row.mt-lg-3.mb-lg-auto.mb-3
+                            .g-recaptcha(data-sitekey="6LdO4h8pAAAAADj8tAhq-v0D5x8q_adS6LTQdXmp")
+                        .row.mt-lg-5
+                            .col-md-6.mb-lg-auto.mb-3
+                                button(type='submit').btn.btn-warning ENVIAR MIS DATOS

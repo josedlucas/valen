@@ -1,0 +1,214 @@
+
+<html>
+  <head>
+    <title>Valen</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+  </head>
+</html>
+<body class="bg-white">
+  <div class="loader-container" style="display: none">
+    <div class="loader"></div>
+  </div><img class="d-md-block d-none" src="assets/images/header/top-header.svg" alt="top header" style="width: 100%;"/><img class="d-md-none d-block" src="assets/images/header/top-header-m.svg" alt="top header" style="width: 100%;"/>
+  <header class="align-items-center d-block bg-black">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <!-- toggle in header only mobile-->
+      <button class="navbar-toggler my-2 border-0 col-2" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <!-- menu in header only desktop left-->
+      <div class="collapse navbar-collapse col-md-4" id="main_nav2">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">NOSOTROS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">CONTACTO</a></li>
+        </ul>
+      </div>
+      <!-- logo in header mobile and desktop--><a class="navbar-brand col-md-4 col-6 justify-content-center d-flex logo-background mx-0" href="/"><img class="logo" src="assets/images/logo/logo.svg" alt="Logo"/></a>
+      <!-- menu in header only mobile right-->
+      <div class="col-md-4 d-flex d-md-none col-2 justify-content-end"><a class="nav-link   mx-auto d-block" href="./contact"><img src="assets/images/icons/car.svg" alt="Lupa" width="25px" height="25px"/></a></div>
+      <!-- meno in mobile dropdown-->
+      <div class="collapse col-md-4 d-md-none" id="main_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">NOSOTROS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">CONTACTO</a></li>
+        </ul>
+      </div>
+      <!-- mega menu in header only desktop right-->
+      <div class="col-md-4 d-none d-md-block">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown ktm-mega-menu ms-lg-4 d-none d-md-block"><a class="nav-link dropdown-toggle d-flex align-items-center  " href="./products" data-bs-toggle="dropdown"><img class="me-2" src="assets/images/icons/plus.svg" alt="Lupa"/>
+              CATÁLOGO DE PRODUCTOS</a>
+            <div class="dropdown-menu mega-menu py-md-5 px-md-5 ps-4 py-lg-5 px-lg-5 py-sm-4 px-sm-4">
+              <div class="row ms-auto col-md-10">
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center">
+                  <div>
+                    <div class="d-flex align-items-center mb-md-3"><img src="assets/images/header/mega-menu/img.png" width="50"/>
+                      <p class="text-warning mb-0 ms-md-4 fw-light">CALZADO <br class="d-md-block d-none"/>
+                        DE SEGURIDAD
+                      </p>
+                    </div>
+                    <ul class="ms-md-6 ps-md-3">
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./pantalon-clasico"> ZAPATO</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./pantalon-cargo"> ZAPATILLA</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./pantalon-cargo-tres-estrellas"> BOTIN</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./camisa-de-jean"> BOTA</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./camisa-de-jean"> BORCEGUI</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6 raya-s raya-e d-flex justify-content-center">
+                  <div class="mx-5">
+                    <div class="d-flex align-items-center mb-md-3"><img src="assets/images/header/mega-menu/img_1.png" width="50"/>
+                      <p class="text-warning mb-0 ms-md-4 fw-light">ROPA DE <br class="d-md-block d-none"/>
+                        TRABAJO
+                      </p>
+                    </div>
+                    <ul class="ms-md-6 ps-md-3">
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./campera"> VALEN.NQN</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./chaleco-reflectivo"> DE TRABAJO</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./buzo-friza">DE SOLDADOR</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./jean-de-trabajo">IGNIFUGA</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./jean-de-trabajo">FRÍO</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-center">
+                  <div>
+                    <div class="d-flex align-items-center mb-md-3"><img src="assets/images/header/mega-menu/img_2.png" width="50"/>
+                      <p class="text-warning mb-0 ms-md-4 fw-light">PROTECCIÓN <br class="d-md-block d-none"/>
+                        PERSONAL
+                      </p>
+                    </div>
+                    <ul class="ms-md-6 ps-md-3">
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./rama-de-algodon"> AUDITIVA</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./chomba-de-algodon"> CRANEANA</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./bombacha-de-campo">DE MANOS</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./pantalon-de-seguridad"> OCULAR</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./pantalon-de-seguridad"> RESPIRATORIA</a></li>
+                      <li class="mega-menu-item"><a class="dropdown-item fw-lighter" href="./pantalon-de-seguridad"> LUMBAR Y DE ALTURA</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item ms-lg-4 d-flex align-items-center raya-s-header"><a class="nav-link  " href="./special-orders"></a><img src="assets/images/icons/lupa.svg" alt="Lupa"/></li>
+          <li class="nav-item ms-lg-4 d-flex align-items-center"><a class="nav-link  " href="./contact"><img src="assets/images/icons/car.svg" alt="Lupa"/><span class="cart-number" id="conterCart">21</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Ends-->
+  <main>
+    <section id="section1">
+      <div class="owl-carousel owl-theme about-us">
+        <div><img class="img-width-100 d-md-block d-none" src="assets/images/about-us/section1/img.png"/><img class="img-width-100 d-md-none d-block" src="assets/images/about-us/section1/img_m.png"/>
+          <div class="mt-md-n22 pb-md-15 mt-n16 pb-13 col-md-8 mx-auto">
+            <p class="text-warning fw-lighter raya-b d-grid">NOSOTROS</p>
+            <p class="text-white fw-lighter mt-md-3">Hace 7 años, un emprendedor visionario identificó una necesidad <br class="d-md-block d-none"/>
+              creciente en la zona de Neuquén Capital:
+            </p>
+            <h1 class="fs-9 text-warning fw-lighter">LA FATAL DE UNA CASA DE <br class="d-md-block d-none"/>
+              SEGURIDAD INDUSTRIAL <br class="d-md-block d-none"/>
+              CONFIABLE.
+            </h1>
+            <p class="text-white mt-md-4 fw-light">Con determinación y visión, fundó Valen Indumentaria Industrial <br class="d-md-block d-none"/>
+              con el objetivo de proporcionar soluciones integrales en seguridad <br class="d-md-block d-none"/>
+              laboral para las empresas locales.
+            </p>
+            <div class="mt-md-5 mt-4"><a class="btn btn-warning" href="./products.html">CONTÁCTANOS</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-md-3" id="section2"><img class="w-100 mt-md-n15" src="assets/images/about-us/section2/background.svg"/>
+      <div class="col-md-9 mx-auto py-md-5 my-4 mt-md-n26 row">
+        <div class="col-md-5"><img class="w-85" src="assets/images/about-us/section2/img.png"/></div>
+        <div class="col-md-7">
+          <h6 class="fw-light fs-6">NUESTROS PRODUCTOS</h6>
+          <p class="fw-light lh-4 my-3">
+            Desde entonces, hemos crecido y diversificado nuestros servicios para
+            ofrecerles una amplia selección de Elementos de Protección Personal,
+            Calzado de Seguridad y Ropa de Trabajo de marcas reconocidas en el
+            mercado. Desde Guantes y Anteojos de protección hasta botas de seguridad
+            certificadas y ropa de trabajo duradera, nuestra variedad de productos
+            garantiza que encuentres exactamente lo que necesitás para proteger a
+            tus trabajadores y cumplir con las normativas de seguridad laboral.
+          </p>
+          <h3 class="fw-light">EL OBJETIVO DE PROPORCIONAR SOLUCIONES INTEGRALES EN SEGURIDAD LABORAL PARA LAS EMPRESAS LOCALES.</h3>
+        </div>
+      </div>
+    </section>
+    <section class="py-md-3" id="section3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-end"><img class="w-75" src="assets/images/home/section3/img.png"/></div>
+          <div class="col-md-6 pt-md-5">
+            <h3 class="text-warning fs-4 fw-lighter">¿Cómo nace Valen <br class="d-md-block d-none"/> Indumentaria?</h3>
+            <p class="text-white">Hace 7 años, un emprendedor visionario identificó una <br class="d-md-block d-none"/>necesidad creciente en la zona de Neuquén Capital:</p>
+            <h5 class="text-warning fs-1">La falta de una casa de seguridad <br class="d-md-block d-none"/>industrial confiable.</h5>
+            <p class="text-white">Con determinación y visión, fundó Valen Indumentaria <br class="d-md-block d-none"/>Industrial con el objetivo de proporcionar soluciones <br class="d-md-block d-none"/>integrales en seguridad laboral para las empresas locales.</p><a class="btn btn-warning rounded-0">CONOCER MÁS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-md-3" id="section4"><img class="w-100" src="assets/images/home/section4/background.svg"/>
+      <div class="col-md-8 mx-auto py-md-5 my-4 mt-md-n21">
+        <div class="owl-carousel owl-theme owl-carousel-section4">
+          <div class="row">
+            <div class="col-md-6 pt-md-5">
+              <h3 class="text-white fs-10 fw-lighter">TESTIMONIOS 1 / 3</h3><img class="w-10 my-4" src="assets/images/home/section4/comillas.svg"/>
+              <p class="text-white text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum
+                nisi sit amet dolor accumsan luctus. In id tempus lorem, lacinia blandit urna.
+                Etiam at ipsum molestie, porta elit quis, fermentum erat. Aliquam in massa
+                pellentesque, commodo odio non.
+              </p>
+              <p class="text-warning">Nombre de cliente, nombre empresa</p>
+            </div>
+            <div class="col-md-6"><img class="w-100" src="assets/images/home/section4/slider/img.png"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-md-3 mb-md-6 mt-md-5" id="section5">
+      <div class="col-md-8 mx-auto my-4 bg-white rounded-4 pb-md-6 pt-md-3">
+        <div class="d-grid pt-3 pb-md-3">
+          <h6 class="fs-2 text-center mx-auto z-1 bg-white px-4" style="width: fit-content;">Marcas con las que trabajamos</h6><img class="w-100 z-n1 mt-md-n4 mb-md-5 z-0" src="assets/images/home/section5/raya.svg"/>
+        </div>
+        <div class="owl-carousel owl-theme owl-carousel-section5"><img src="assets/images/home/section5/slider/img.png"/><img src="assets/images/home/section5/slider/img_1.png"/><img src="assets/images/home/section5/slider/img_2.png"/><img src="assets/images/home/section5/slider/img_3.png"/><img src="assets/images/home/section5/slider/img_4.png"/><img src="assets/images/home/section5/slider/img_5.png"/><img src="assets/images/home/section5/slider/img_6.png"/></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/script.js"></script>
+  <footer class="footer bg-footer align-items-md-center d-md-flex">
+    <div class="container mx-sm-auto col-md-12 col-11 col-lg-12 mx-auto py-lg-4 my-lg-4 py-md-5 my-md-4 pt-sm-4 pb-sm-5 my-sm-3 pt-3 pb-5 my-4">
+      <div class="row"><a class="col-xl-3 col-sm-6 col-12 mt-xl-0 mt-4" href="/"><img src="assets/images/logo/logo.svg"/></a>
+        <div class="col-xl-3 col-sm-6 col-12 mt-xl-auto mt-4 d-flex d-xl-auto">
+          <ul class="col-lg-3 col-md-6 col-sm-6">
+            <li class="mega-menu-item"><a class="dropdown-item ms-3" href="./camisa-de-trabajo"> CATÁLOGO DE PRODUCTOS</a></li>
+            <li class="mega-menu-item"><a class="dropdown-item ms-3" href="./mameluco"> ROPA DE TRABAJO</a></li>
+            <li class="mega-menu-item"><a class="dropdown-item ms-3" href="./mameluco-termico"> ZALZADO DE SEGURIDAD</a></li>
+            <li class="mega-menu-item"><a class="dropdown-item ms-3" href="./bermuda-cargo"> PROTECCIÓN PERSONAL</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 d-flex justify-content-xl-center col-sm-6 col-12 mt-lg-0 mt-4">
+          <ul class="col-lg-3 col-md-6 col-sm-6">
+            <li class="mega-menu-item"><a class="dropdown-item ms-3" href="./camisa-de-trabajo">NOSOTROS</a></li>
+            <li class="mega-menu-item"><a class="dropdown-item ms-3" href="./mameluco"> CONTACTO</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 d-flex justify-content-xl-center col-sm-6 col-12 mt-lg-0 mt-sm-auto justify-content-sm-end justify-content-start mt-5 pt-sm-0 pt-4">
+          <div class="d-flex align-content-start">
+            <!--.raya-1.d-xl-block.d-none--><a href="mailto:xxxxxxxxx@example.com"><img class="ms-4 w-100" src="assets/images/icons/email.png"/></a><a class="ms-3" href="tel:xxxxxxxxx"><img class="ms-4 w-100" src="assets/images/icons/call.png"/></a><a class="ms-3" href="https://www.instagram.com/xxxxxxxxx/"><img class="ms-4 w-100" src="assets/images/icons/instagram.png"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

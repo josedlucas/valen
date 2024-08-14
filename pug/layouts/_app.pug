@@ -1,0 +1,14 @@
+html
+    block variables
+    include ../components/_head
+body(class=colorBackground)
+    .loader-container(style="display: none")
+        .loader
+    include ../components/_header
+    main
+        block content
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+    script(src='assets/js/app.js')
+    script(src='assets/js/script.js')
+    include ../components/_footer
+

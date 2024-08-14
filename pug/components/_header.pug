@@ -1,0 +1,111 @@
+img(src='assets/images/header/top-header.svg', alt='top header' style="width: 100%;").d-md-block.d-none
+img(src='assets/images/header/top-header-m.svg', alt='top header' style="width: 100%;").d-md-none.d-block
+
+header.align-items-center.d-block.bg-black
+    nav.navbar.navbar-expand-lg.navbar-light.p-0
+        // toggle in header only mobile
+        button.navbar-toggler.my-2.border-0.col-2(type="button", data-bs-toggle="collapse", data-bs-target="#main_nav", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        // menu in header only desktop left
+        .collapse.navbar-collapse.col-md-4(id="main_nav2")
+            ul.navbar-nav
+                li.nav-item
+                    a.nav-link(href="/") HOME
+                li.nav-item
+                    a.nav-link(href="/") NOSOTROS
+                li.nav-item
+                    a.nav-link(href="/") CONTACTO
+        // logo in header mobile and desktop
+        a.navbar-brand(href='/').col-md-4.col-6.justify-content-center.d-flex.logo-background.mx-0
+            img(src='assets/images/logo/logo.svg', alt='Logo').logo
+        // menu in header only mobile right
+        .col-md-4.d-flex.d-md-none.col-2.justify-content-end
+            a.nav-link(href="./contact", class=menu.contact).mx-auto.d-block
+                img(src='assets/images/icons/car.svg', alt='Lupa', width='25px', height='25px')
+
+        // meno in mobile dropdown
+        .collapse.col-md-4.d-md-none(id="main_nav")
+            ul.navbar-nav
+                li.nav-item
+                    a.nav-link(href="/") HOME
+                li.nav-item
+                    a.nav-link(href="/") NOSOTROS
+                li.nav-item
+                    a.nav-link(href="/") CONTACTO
+        // mega menu in header only desktop right
+        .col-md-4.d-none.d-md-block
+            ul.navbar-nav.ms-auto
+                li.nav-item.dropdown.ktm-mega-menu.ms-lg-4.d-none.d-md-block
+                    a.nav-link.dropdown-toggle.d-flex.align-items-center(href="./products", data-bs-toggle="dropdown" , class=menu.products)
+                        | #[img(src='assets/images/icons/plus.svg', alt='Lupa').me-2]
+                        |CATÁLOGO DE PRODUCTOS
+                    .dropdown-menu.mega-menu.py-md-5.px-md-5.ps-4.py-lg-5.px-lg-5.py-sm-4.px-sm-4
+                        .row.ms-auto.col-md-10
+                            .col-lg-3.col-md-6.col-sm-6.d-flex.justify-content-center
+                                div
+                                    div.d-flex.align-items-center.mb-md-3
+                                        img(src='assets/images/header/mega-menu/img.png', width="50")
+                                        p.text-warning.mb-0.ms-md-4.fw-light
+                                            | CALZADO #[br.d-md-block.d-none]
+                                            | DE SEGURIDAD
+                                    ul.ms-md-6.ps-md-3
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./pantalon-clasico")  ZAPATO
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./pantalon-cargo")  ZAPATILLA
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./pantalon-cargo-tres-estrellas")  BOTIN
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./camisa-de-jean")  BOTA
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./camisa-de-jean")  BORCEGUI
+                            .col-lg-5.col-md-6.col-sm-6.raya-s.raya-e.d-flex.justify-content-center
+                                div.mx-5
+                                    div.d-flex.align-items-center.mb-md-3
+                                        img(src='assets/images/header/mega-menu/img_1.png', width="50")
+                                        p.text-warning.mb-0.ms-md-4.fw-light
+                                            | ROPA DE #[br.d-md-block.d-none]
+                                            | TRABAJO
+                                    ul.ms-md-6.ps-md-3
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./campera")  VALEN.NQN
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./chaleco-reflectivo")  DE TRABAJO
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./buzo-friza") DE SOLDADOR
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./jean-de-trabajo") IGNIFUGA
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./jean-de-trabajo") FRÍO
+                            .col-lg-4.col-md-6.col-sm-6.d-flex.justify-content-center
+                                div
+                                    div.d-flex.align-items-center.mb-md-3
+                                        img(src='assets/images/header/mega-menu/img_2.png', width="50")
+                                        p.text-warning.mb-0.ms-md-4.fw-light
+                                            | PROTECCIÓN #[br.d-md-block.d-none]
+                                            | PERSONAL
+                                    ul.ms-md-6.ps-md-3
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./rama-de-algodon")  AUDITIVA
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./chomba-de-algodon")  CRANEANA
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./bombacha-de-campo") DE MANOS
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./pantalon-de-seguridad")  OCULAR
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./pantalon-de-seguridad")  RESPIRATORIA
+                                        li.mega-menu-item
+                                            a.dropdown-item.fw-lighter(href="./pantalon-de-seguridad")  LUMBAR Y DE ALTURA
+                li.nav-item.ms-lg-4.d-flex.align-items-center.raya-s-header
+                    a.nav-link(href="./special-orders", class=menu.specialOrders)
+                    img(src='assets/images/icons/lupa.svg', alt='Lupa')
+                li.nav-item.ms-lg-4.d-flex.align-items-center
+                    a.nav-link(href="./contact", class=menu.contact)
+                        img(src='assets/images/icons/car.svg', alt='Lupa')
+                        span#conterCart.cart-number 21
+
+
+
+
+// Ends

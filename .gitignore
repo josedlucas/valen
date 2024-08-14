@@ -1,0 +1,8 @@
+# Directorios generados por IntelliJ
+.idea/
+
+# Archivos generados por IntelliJ
+*.iml
+*.iws
+*.ipr
+

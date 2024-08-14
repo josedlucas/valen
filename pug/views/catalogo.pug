@@ -1,0 +1,45 @@
+extends ../layouts/_app
+block variables
+
+    -
+        var title = "Acción";
+        var colorBackground = "bg-white-theme";
+        var products = [
+            { image: "image5.png",  line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO", url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+            { image: "image5.png", line: "Categoria", title: "PRODUCTO" , url: "./product-detail.html"},
+        ];
+        var menu = {
+            home: " ",
+            products: "active",
+            specialOrders: " ",
+            contact: ""
+        };
+block content
+    section#section3Product
+        .container.col-md-9.col-10.mx-auto
+            .mt-md-5
+                h4.text-warning.fs-7.fw-light CATÁLOGO
+                div.d-flex
+                    a(href="./products.html").text-dark.me-md-4
+                        span.fs-3 INDUMENTARIA DE TRABAJO
+                    a(href="./products.html").text-dark.me-md-4
+                        span.fs-3 CALZADO DE SEGURIDAD
+                    a(href="./products.html").text-dark.me-md-4
+                        span.fs-3 PROTECCIÓN PERSONAL
+            .row.py-lg-5.py-5
+                each product, index in products
+                    .col-lg-3.col-sm-6.mb-4
+                        a(href=`${product.url}`).card.bg-transparent.border-0.text-style-none
+                            img.card-img-top(src=`img/products/${product.image}`, alt="...")
+                            .card-body.pt-2.ps-2
+                                small=product.line
+                                h5.mt-lg-1.card-title.font-size-lg-22.font-size-md-21=product.title
