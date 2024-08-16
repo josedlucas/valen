@@ -407,6 +407,18 @@ a{
 }
 @for $i from 1 through 100 {
 
+    @media (min-width: 1800px) {
+        .font-size-xxxl-#{$i} {
+            font-size: #{$i}px !important;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .font-size-xxl-#{$i} {
+            font-size: #{$i}px !important;
+        }
+    }
+
     @media (min-width: 1200px) {
         .font-size-xl-#{$i} {
             font-size: #{$i}px !important;

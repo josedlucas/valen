@@ -26,9 +26,6 @@ if ($(".about-us").length > 0) {
         responsive: {
             0: {
                 items: 1,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
             }
         }
     });
@@ -67,7 +64,8 @@ if ($(".owl-carousel-section4").length > 0) {
         dots: false,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                margin: 30,
             }
         }
     });
